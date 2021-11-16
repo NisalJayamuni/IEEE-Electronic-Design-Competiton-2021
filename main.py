@@ -2,12 +2,13 @@ import cv2
 import mediapipe as mp
 import time
 
+
 mpDraw = mp.solutions.drawing_utils
 mpPose = mp.solutions.pose
 pose = mpPose.Pose()
 
 #cap = cv2.VideoCapture('Videos/3.mp4')
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)   # use cv2.VideoCapture(1) for other camera
 cap.set(3,1280)
 cap.set(4,720)
 cap.set(10,70)
